@@ -1,9 +1,7 @@
-import { Typography } from "@mui/material";
+import HomePage from "../components/templates/HomePage";
 
 export default function Home() {
   return (
-    <Typography component="p" variant="h4">
-      NextFood
-    </Typography>
+    <HomePage/>
   );
 }
