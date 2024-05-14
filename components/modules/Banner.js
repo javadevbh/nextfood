@@ -18,7 +18,7 @@ function Banner() {
           borderColor="primary.main"
           width="fit-content"
         >
-          BotoFood
+          NextFood
         </Typography>
         <Typography component="p" variant="p" margin="30px 0" fontWeight={500}>
           Food Delivery and Takeout!
