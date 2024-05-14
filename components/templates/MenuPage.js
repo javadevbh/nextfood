@@ -18,8 +18,8 @@ function MenuPage({ data }) {
         <Grid container>
           {data.length &&
             data.map((food) => (
-              <Grid item xs={12} md={6} lg={4}>
-                <FoodCard key={food.id} {...food} />
+              <Grid key={food.id} item xs={12} md={6} lg={4}>
+                <FoodCard {...food} />
               </Grid>
             ))}
         </Grid>
