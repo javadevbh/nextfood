@@ -25,8 +25,14 @@ export async function getStaticProps(context) {
   const res = await fetch(`http://localhost:4000/data/${foodId}`);
   const data = await res.json();
 
+  if (!data.id) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: { data },
-    revalidate: 10,
+    revalidate: 1 * 60 * 60,
   };
 }
