@@ -28,7 +28,6 @@ function CategoriesPage({ data }) {
   };
 
   const searchHandler = () => {
-    console.log(query);
     router.push({ pathname: "categories", query });
   };
 

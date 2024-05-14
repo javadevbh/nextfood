@@ -17,6 +17,7 @@ export async function getServerSideProps(context) {
     );
 
     const timeResult = food.details.filter((detail) => {
+      
       const cookingTime = detail["Cooking Time"] || "";
       const [timeDetail] = cookingTime.split(" ");
       if (time == "less" && timeDetail && +timeDetail <= 30) {
